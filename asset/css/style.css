@@ -1,0 +1,311 @@
+.input{
+    width: 250px;
+    font-family: inherit;
+    border-bottom: 3px solid;
+    outline: 0;
+    font-size: 14px;
+    color: rgb(168, 57, 6);
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.5s;
+    border-radius: 10px;
+    box-shadow: 2px 3px #888888;
+  
+}
+.inputName{
+  width: 210px;
+  font-family: "Comic Sans MS";
+  border-bottom: 3px solid;
+  outline: 0;
+  font-size: 16px;
+  color: rgb(168, 57, 6);
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.5s;
+  border-radius: 30px;
+  box-shadow: 2px 3px #888888;
+}
+.imgReport{
+  width: 55px;
+  height: 55px;
+  align-items: center;
+  position: inherit;
+
+}
+.dateReport{
+  width: 210px;
+  border-bottom: 3px solid;
+  outline: 0;
+  font-size: 16px;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.5s;
+  border-radius: 30px;
+}
+.name{
+  text-shadow: 2px 2px #8f2f02;
+
+}
+.tr1{
+  background-color: rgb(0, 58, 167);
+  color: rgb(255, 217, 0);
+}
+.button{
+  height: 25px;
+  width: 115px;
+  border: 0;
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  box-shadow: 2px 4px #888888;
+
+}
+
+.mystyle{
+  align-items: center;
+  text-align: center;
+  color: #8f2f02;
+  
+}
+.form-control{
+  width: 220px;
+  height: 35px;
+  border-radius: 4px;
+  box-shadow: 0px 3px #721b1b;
+  border: 0;
+  background: transparent;
+
+}
+.myForm{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.myBtnstyle{
+  height: 35px;
+  width: 75px;
+  border: 0;
+  background-color: rgb(54, 6, 6);
+  color: aliceblue;
+  border-radius: 4px;
+  box-shadow: 2px 1px #ad9719;
+  margin-top: 20px;
+
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 50px;
+  border: 1px solid rgba(255, 0, 0, 0.26);
+  width: 80%;
+  border-radius: 555px;
+  transition: 500s padding ease-in, 500s margin ease-in, 500s border ease-in;
+
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 150px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content2 {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 50px;
+  border: 1px solid rgba(255, 0, 0, 0.26);
+  width: 80%;
+  border-radius: 555px;
+  transition: 500s padding ease-in, 500s margin ease-in, 500s border ease-in;
+
+}
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 150px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.bodyFont{
+  color: #72491b;
+  font-family: "Comic Sans MS", Times, serif;
+}
+.item{
+  text-align: center;
+}
+#head{
+  text-align: center;
+  color: rgb(255, 145, 0);
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+#body{
+  text-align: center;
+  color: #721b1b;
+}
+table {
+font-family: arial, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+
+td, th {
+border: 1px solid #3b3535;
+text-align: center;
+padding: 8px;
+}
+
+tr:nth-child(even) {
+background-color: #e2e2e2;
+}
+input, select {
+  border: 0;
+  width: 95px;
+  font-size: 16px;
+  text-align: center;
+  color: rgb(100, 24, 172);
+}
+.design{
+  align-content: center;
+  align-items: center;
+}
+.myClassA{
+  border: 0;
+  background-color: transparent;
+  margin: 25px;
+  height: 35px;
+  width: 105px;
+  border-radius: 5px;
+  box-shadow: 1px 5px #689416;
+  font-family: "Comic Sans MS", Times, serif;
+  font-size: 16px;
+}
+.myClassARe{
+  border: 0;
+  background-color: transparent;
+  margin: 25px;
+  height: 35px;
+  width: 105px;
+  border-radius: 5px;
+  box-shadow: 1px 5px #94163c;
+  font-family: "Comic Sans MS", Times, serif;
+  font-size: 16px;
+}
+.myLogin{
+  border: 0;
+  background-color: transparent;
+  margin: 25px;
+  height: 35px;
+  width: 105px;
+  border-radius: 5px;
+  box-shadow: 1px 5px #164894;
+  font-family: "Comic Sans MS", Times, serif;
+  font-size: 16px;
+}
+
+.text-center{
+  align-items: center;
+}
+.button-62 {
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-6 {
+  align-items: center;
+  background-color: #55360838;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin-left: 5px;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 65px;
+  height: 5px;
+}
+
+.button-6:hover,
+.button-6:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button-6:hover {
+  transform: translateY(-1px);
+}
+
+.button-6:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" class="bodyFont background">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="./asset/img/page_icon.png">
+
+    <title>Teaching Report</title>
+    <style>
+        .bodyFont{
+
+            font-family: "Comic Sans MS", Times, serif;
+        }
+        #head{
+            text-align: center;
+            color: rgb(255, 145, 0);
+            width: 100%;
+            height: auto;
+        }
+        #body{
+            text-align: center;
+        }
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #3b3535;
+          text-align: center;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #bce0f8;
+        }
+        input, select {
+            border: 0;
+            width: 95px;
+            font-size: 16px;
+            text-align: center;
+            color: rgb(100, 24, 172);
+        }
+        #short{
+            width: 45px;
+        }
+        .background{
+            height: 100%;
+            width: 100%;
+            background-image: url(asset/img/background.jpg);
+
+        }
+        
+    </style>
+
+</head>
+<body onload="getDataReport2()" class="bodyFont">
+    <h1 id="head" class="name">Teaching Report</h1>
+    <h3 id="head" class="name">(Bebe & Lita)</h3>
+    <br>
+    <div class="item">
+        <img src="./asset/img/report.png" alt="" class="imgReport"><p><input type="date" value="" id="myDate" class="dateReport"></p>
+
+    </div>
+    <div id="body">
+        <table id="sSinfo" class="bodyFont">
+            <tr class="tr1">
+                <th>Week</th>
+                <th>Date</th>
+                <th>Times</th>
+                <th>Other</th>
+
+            </tr>
+        </table>
+        <tbody class="bodyFont">
+            
+        </tbody>
+
+    </div>
+    <script src="./asset/js/myReport2.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" class="bodyFont background">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/css/style.css">
+
+
+    <link rel="shortcut icon" type="image/png" href="./asset/img/page_icon.png">
+
+    <title>Teaching Report</title>
+    <style>
+      
+        .background{
+            height: 100%;
+            width: 100%;
+            background-image: url(asset/img/background.jpg);
+
+        }
+
+    </style>
+
+</head>
+<body id="myBody" class="bodyFont">
+    <h1 id="head" class="name">Teaching Report</h1>
+    <h3 id="head" class="name">(Choose Data)</h3>
+    <div id="head">
+        <button id="myClassA" class="myClassA" onclick="goInA()">Emily/Elite</button>
+        <button id="myClassB" class="myClassA" onclick="goInB()">Bebe/Lita</button>
+    </div>
+    <div id="head">
+      <button id="myReportA" class="myClassARe" onclick="myReportA()">Report (A)</button>
+      <button id="myReportB" class="myClassARe" onclick="myReportB()">Report (B)</button>
+  </div>
+
+<div id="myModal" class="modal mystyle">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <main class="form-signin text-center"> 
+        <form name="myForm">
+          <img class="mb-4" src="./asset/img/page_icon.png" alt="" width="72" height="57">
+          <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+      
+          <div class="form-floating myForm">
+            <label for="floatingInput">Email address</label>
+            <br>
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="Uname">
+          </div>
+          <div class="form-floating myForm">
+            <label for="floatingPassword">Password</label>
+            <br>
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="Pass">
+          </div>
+      
+          
+          <button class="w-100 btn btn-lg btn-primary myBtnstyle" type="submit" name="log" onclick="myFunction()">Sign in</button>
+          <p class="mt-5 mb-3 text-muted">&copy; 2022 by AX</p>
+        </form>
+      </main> 
+  </div>
+</div>
+
+<div id="myModal2" class="modal2 mystyle">
+
+  <!-- Modal content -->
+  <div class="modal-content2">
+    <main class="form-signin text-center"> 
+        <form name="myForm">
+          <img class="mb-4" src="./asset/img/page_icon.png" alt="" width="72" height="57">
+          <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+      
+          <div class="form-floating myForm">
+            <label for="floatingInput">Email address</label>
+            <br>
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="Uname">
+          </div>
+          <div class="form-floating myForm">
+            <label for="floatingPassword">Password</label>
+            <br>
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="Pass">
+          </div>
+      
+          
+          <button class="w-100 btn btn-lg btn-primary myBtnstyle" type="submit" name="log" onclick="myFunction2()">Sign in</button>
+          <p class="mt-5 mb-3 text-muted">&copy; 2022 by AX</p>
+        </form>
+      </main> 
+  </div>
+</div>
+<script src="./asset/js/code.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" class="bodyFont background">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="./asset/img/page_icon.png">
+
+    <title>Teaching Report</title>
+    <style>
+        .bodyFont{
+
+            font-family: "Comic Sans MS", Times, serif;
+        }
+        #head{
+            text-align: center;
+            color: rgb(255, 145, 0);
+            width: 100%;
+            height: auto;
+        }
+        #body{
+            text-align: center;
+        }
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #3b3535;
+          text-align: center;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #bce0f8;
+        }
+        input, select {
+            border: 0;
+            width: 95px;
+            font-size: 16px;
+            text-align: center;
+            color: rgb(100, 24, 172);
+        }
+        #short{
+            width: 45px;
+        }
+        .background{
+            height: 100%;
+            width: 100%;
+            background-image: url(asset/img/background.jpg);
+
+        }
+        
+    </style>
+
+</head>
+<body onload="getData()" class="bodyFont">
+    <h1 id="head" class="name">Teaching Report</h1>
+    <h3 id="head" class="name">(Emily & Elite)</h3>
+    <div id="body" class="bodyFont"> <!--Input Data in here-->
+        <p id="body">Week: <select id="myWeek">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option> </select>
+            </p>
+            <p>Date:&nbsp;&nbsp; <input type="date" value="01-01-2022" id="myDate" class="inputName"></p>
+
+            <div id="body" class="bodyFont">
+                <p id="body">Times:&nbsp;&nbsp; <select id="myPay">
+                    <option value="1">1</option>
+                    <option value="2">2</option> 
+                    <option value="3">3</option> 
+                    <option value="4">4</option> 
+                    <option value="5">5</option> 
+                    <option value="6">6</option> 
+                    <option value="7">7</option> 
+                    <option value="8">8</option> 
+
+                </select></p>
+            <p>Other:&nbsp;&nbsp;<input type="text" id="myOther" class="input"></p>
+            <p>ID:&nbsp;&nbsp;<input type="text" id="myID"></p>
+
+        <div>
+            <button id="sumbit" onclick="saveData()" class="button-62" role="button"name="submit_login" type="submit">Submit</button>
+            <button id="update" onclick="updateData()" class="button-62" role="button"name="update_data" type="submit">Update</button>
+            <button id="clear" onclick="onClear()" class="button-62" role="button"name="clear_data" type="submit">Clear Data</button>
+
+        </div>
+
+    </div>
+    <br>
+    <div id="body">
+        <table id="sSinfo" class="bodyFont">
+            <tr class="tr1">
+                <th>Week</th>
+                <th>Date</th>
+                <th>Times</th>
+                <th>ID</th>
+                <th>Other</th>
+                <th>Action</th>
+
+            </tr>
+        </table>
+        <tbody class="bodyFont">
+        </tbody>
+
+    </div>
+    <script src="./asset/js/savedata.js"></script>
+</body>
+</html>
