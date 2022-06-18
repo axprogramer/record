@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./asset/css/style.css">
     <link rel="shortcut icon" type="image/png" href="./asset/img/page_icon.png">
 
@@ -13,32 +14,86 @@
             height: 100%;
             width: 100%;
             background-image: url(asset/img/background.jpg);
-
+            background-size: cover;
         }
+        
     </style>
 
 </head>
-<body onload="getDataReport()" class="bodyFont">
-    <h1 id="head" class="name">Teaching Report</h1>
-    <h3 id="head" class="name">(Emily & Elite)</h3>
-    <br>
-    <div class="item">
-        <img src="./asset/img/report.png" alt="" class="imgReport"><p><input type="date" value="" id="myDate" class="dateReport"></p>
+<body>
+    <div id="body" class="bodyFont">
+        <h1 id="head" class="name">Teaching Report</h1>
+        <h3 id="head" class="name">(Emily & Elite)</h3>
+        <br>
     </div>
     <div id="body">
+        <div>
+            <img src="./asset/img/report.png" alt="" class="imgReport">
+            <p><input type="date" value="" id="myDate" class="dateReport"></p>
+        </div>
+
         <table id="sSinfo" class="bodyFont">
-            <tr class="tr1">
+            <thead class="tr1">
+                <th>N0</th>
                 <th>Week</th>
                 <th>Date</th>
                 <th>Times</th>
                 <th>Other</th>
-
-            </tr>
+            </thead>
+            <tbody id="tbody1" class="bodyFont">
+            </tbody>
         </table>
-        <tbody class="bodyFont">
-        </tbody>
-
     </div>
-    <script src="./asset/js/savedata.js"></script>
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Form</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form id="body" class="bodyFont">
+                <p id="body">Week: <select id="myWeek">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option> </select>
+                    </p>
+                    <p>Date:&nbsp;&nbsp; <input type="date" value="dd-MM-yyy" id="myDate" class="inputName"></p>
+        
+                    <div id="body" class="bodyFont">
+                        <p id="body">Times:&nbsp;&nbsp; <select id="myPay">
+                            <option value="1">1</option>
+                            <option value="2">2</option> 
+                            <option value="3">3</option> 
+                            <option value="4">4</option> 
+                            <option value="5">5</option> 
+                            <option value="6">6</option> 
+                            <option value="7">7</option> 
+                            <option value="8">8</option> 
+        
+                        </select></p>
+                    <p>Other:&nbsp;&nbsp;<input type="text" id="myOther" class="input"></p>
+                    <p>ID:&nbsp;&nbsp;<input type="text" id="myID"></p>
+            </form>
+        
+        </div>
+        <div class="modal-footer">
+            <button id="mySubmit" onclick="AddStd()" class="button-62" role="button" type="submit">Submit</button>
+            <button id="myUpdate" onclick="UpStd()" class="button-62" role="button"name="update_data" >Update</button>
+            <button id="myDele" onclick="DelStd()" class="button-62" role="button"name="clear_data" >Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./asset/js/showDataA.js"></script>
 </body>
 </html>
