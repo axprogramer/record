@@ -91,20 +91,21 @@
   color: #72491b;
   font-family: "Comic Sans MS", Times, serif;
   padding: 25px;
+  text-align: center;
 }
 .item{
   text-align: center;
 }
-#head{
+#head1{
   text-align: center;
   color: rgb(255, 145, 0);
   width: 100%;
   height: auto;
   margin-top: 50px;
 }
-#body{
+#body1{
   text-align: center;
-  padding: 25px;
+  padding: 15px;
 }
 table {
 font-family: arial, sans-serif;
@@ -244,4 +245,11 @@ input, select {
   box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
   color: rgba(0, 0, 0, 0.65);
   transform: translateY(0);
+}
+.button-11{
+  background-color: transparent;
+  border: 0;
+  color: #72491b;
+  font-family: "Comic Sans MS", Times, serif;
+
 }

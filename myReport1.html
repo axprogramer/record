@@ -2,8 +2,6 @@
 <html lang="en" class="bodyFont background">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./asset/css/style.css">
     <link rel="shortcut icon" type="image/png" href="./asset/img/page_icon.png">
@@ -21,42 +19,17 @@
 
 </head>
 <body>
-    <div id="body" class="bodyFont">
-        <h1 id="head" class="name">Teaching Report</h1>
-        <h3 id="head" class="name">(Emily & Elite)</h3>
+    <div id="body1" class="bodyFont">
+        <h1 id="head1" class="name">Teaching Report</h1>
+        <h3 id="head1" class="name">(Emily & Elite)</h3>
         <br>
         <div>
-            <button type="button" class="button-62" role="button" data-toggle="modal" data-target="#exampleModalCenter" onclick="Fillbox(null)">(+) Add</button>
-            <button type="button" class="button-62" role="button" data-toggle="modal" data-target="#exampleModalCenter" onclick="DelStdAll()">Clear Data</button>
+            <button type="button" class="button-62" onclick="Fillbox(null)">(+) Add</button>
+            <button type="button" class="button-62" onclick="DelStdAll()">Clear Data</button>
         </div>
     </div>
-    <div id="body">
-        <table id="sSinfo" class="bodyFont">
-            <thead class="tr1">
-                <th>N0</th>
-                <th>Week</th>
-                <th>Date</th>
-                <th>Times</th>
-                <th>ID</th>
-                <th>Other</th>
-                <th>Action</th>
-            </thead>
-            <tbody id="tbody1" class="bodyFont">
-            </tbody>
-        </table>
-    </div>
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Form</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-            <form id="body" class="bodyFont">
-                <p id="body">Week: <select id="myWeek">
+            <form id="body1" class="bodyFont">
+                <p id="body1">Week: <select id="myWeek">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -64,8 +37,8 @@
                     </p>
                     <p>Date:&nbsp;&nbsp; <input type="date" value="dd-MM-yyy" id="myDate" class="inputName"></p>
         
-                    <div id="body" class="bodyFont">
-                        <p id="body">Times:&nbsp;&nbsp; <select id="myPay">
+                    <div id="body1" class="bodyFont">
+                        <p id="body1">Times:&nbsp;&nbsp; <select id="myPay">
                             <option value="1">1</option>
                             <option value="2">2</option> 
                             <option value="3">3</option> 
@@ -79,16 +52,27 @@
                     <p>Other:&nbsp;&nbsp;<input type="text" id="myOther" class="input"></p>
                     <p>ID:&nbsp;&nbsp;<input type="text" id="myID"></p>
             </form>
-        
-        </div>
-        <div class="modal-footer">
+        <div style="text-align: center;">
             <button id="mySubmit" onclick="AddStd()" class="button-62" role="button" type="submit">Submit</button>
             <button id="myUpdate" onclick="UpStd()" class="button-62" role="button"name="update_data" >Update</button>
             <button id="myDele" onclick="DelStd()" class="button-62" role="button"name="clear_data" >Delete</button>
         </div>
-      </div>
+
     </div>
-  </div>
+    <div id="body">
+        <table id="sSinfo" class="bodyFont">
+            <thead class="tr1">
+                <th>N0</th>
+                <th>Week</th>
+                <th>Date</th>
+                <th>Times</th>
+                <th>ID</th>
+                <th>Other</th>
+            </thead>
+            <tbody id="tbody1" class="bodyFont">
+            </tbody>
+        </table>
+    </div>
   <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-database.js"></script>

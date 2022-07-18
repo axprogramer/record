@@ -89,7 +89,7 @@ function addItemsToTable(week,date,pay,other,id){
   trow.appendChild(td5);
 
   var ControlDiv = document.createElement("div");
-  ControlDiv.innerHTML = '<button type="button" class="button-6" role="button" data-toggle="modal" data-target="#exampleModalCenter" onclick="Fillbox('+studentN0+')">Edit</button>'
+  td2.innerHTML = `<button type="button" class="button-11" onclick="Fillbox(${studentN0})">${date}</button>`;
   trow.appendChild(ControlDiv);
   tbody.appendChild(trow);
 }
