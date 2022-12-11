@@ -126,7 +126,7 @@ function Fillbox(index){
 }
 
 function AddStd(){
-  firebase.database().ref("recordB/"+Mid.value).set(
+  firebase.database().ref("recordB/"+Mdate.value).set(
     {
       week: Mweek.value,
       date: Mdate.value,
@@ -140,7 +140,7 @@ function AddStd(){
 
 }
 function UpStd(){
-  firebase.database().ref("recordB/"+Mid.value).update(
+  firebase.database().ref("recordB/"+Mdate.value).update(
     {
       week: Mweek.value,
       date: Mdate.value,
@@ -153,7 +153,7 @@ function UpStd(){
 
 }
 function DelStd(){
-  firebase.database().ref("recordB/"+Mid.value).remove().then(
+  firebase.database().ref("recordB/"+Mdate.value).remove().then(
     function(){
       selectAllData();
       window.location.reload();
